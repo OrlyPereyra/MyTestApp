@@ -1,0 +1,57 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :ReferenceCode %><br />
+    <%= f.text_field :ReferenceCode %>
+  </div>
+  <div class="field">
+    <%= f.label :Barcode %><br />
+    <%= f.text_field :Barcode %>
+  </div>
+  <div class="field">
+    <%= f.label :Existance %><br />
+    <%= f.text_field :Existance %>
+  </div>
+  <div class="field">
+    <%= f.label :Price %><br />
+    <%= f.text_field :Price %>
+  </div>
+  <div class="field">
+    <%= f.label :Cost %><br />
+    <%= f.text_field :Cost %>
+  </div>
+  <div class="field">
+    <%= f.label :CategoryId %><br />
+    <%= f.text_field :CategoryId %>
+  </div>
+  <div class="field">
+    <%= f.label :integer %><br />
+    <%= f.text_field :integer %>
+  </div>
+  <div class="field">
+    <%= f.label :StatusId %><br />
+    <%= f.text_field :StatusId %>
+  </div>
+  <div class="field">
+    <%= f.label :integer %><br />
+    <%= f.text_field :integer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

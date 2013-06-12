@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @product.Name %>
+</p>
+
+<p>
+  <b>Referencecode:</b>
+  <%= @product.ReferenceCode %>
+</p>
+
+<p>
+  <b>Barcode:</b>
+  <%= @product.Barcode %>
+</p>
+
+<p>
+  <b>Existance:</b>
+  <%= @product.Existance %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @product.Price %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @product.Cost %>
+</p>
+
+<p>
+  <b>Categoryid:</b>
+  <%= @product.CategoryId %>
+</p>
+
+<p>
+  <b>Integer:</b>
+  <%= @product.integer %>
+</p>
+
+<p>
+  <b>Statusid:</b>
+  <%= @product.StatusId %>
+</p>
+
+<p>
+  <b>Integer:</b>
+  <%= @product.integer %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

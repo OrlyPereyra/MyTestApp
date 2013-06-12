@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  ReferenceCode: MyString
+  Barcode: MyString
+  Existance: 1.5
+  Price: 1.5
+  Cost: 1.5
+  CategoryId: MyString
+  integer: MyString
+  StatusId: MyString
+  integer: MyString
+
+two:
+  Name: MyString
+  ReferenceCode: MyString
+  Barcode: MyString
+  Existance: 1.5
+  Price: 1.5
+  Cost: 1.5
+  CategoryId: MyString
+  integer: MyString
+  StatusId: MyString
+  integer: MyString
